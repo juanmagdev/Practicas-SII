@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="13.915" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="10.048" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes/target/test-classes:/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes/target/classes:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.0.4/spring-boot-starter-data-jpa-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.0.4/spring-boot-starter-aop-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-aop/6.0.6/spring-aop-6.0.6.jar:/home/juanmagdev/.m2/repository/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.0.4/spring-boot-starter-jdbc-3.0.4.jar:/home/juanmagdev/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-jdbc/6.0.6/spring-jdbc-6.0.6.jar:/home/juanmagdev/.m2/repository/org/hibernate/orm/hibernate-core/6.1.7.Final/hibernate-core-6.1.7.Final.jar:/home/juanmagdev/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/juanmagdev/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/juanmagdev/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/juanmagdev/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/juanmagdev/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/home/juanmagdev/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/juanmagdev/.m2/repository/net/bytebuddy/byte-buddy/1.12.23/byte-buddy-1.12.23.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/home/juanmagdev/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/home/juanmagdev/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/juanmagdev/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar:/home/juanmagdev/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/juanmagdev/.m2/repository/org/springframework/data/spring-data-jpa/3.0.3/spring-data-jpa-3.0.3.jar:/home/juanmagdev/.m2/repository/org/springframework/data/spring-data-commons/3.0.3/spring-data-commons-3.0.3.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-orm/6.0.6/spring-orm-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-context/6.0.6/spring-context-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-tx/6.0.6/spring-tx-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-beans/6.0.6/spring-beans-6.0.6.jar:/home/juanmagdev/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/juanmagdev/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-aspects/6.0.6/spring-aspects-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.0.4/spring-boot-starter-web-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter/3.0.4/spring-boot-starter-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot/3.0.4/spring-boot-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.0.4/spring-boot-autoconfigure-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.0.4/spring-boot-starter-logging-3.0.4.jar:/home/juanmagdev/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar:/home/juanmagdev/.m2/repository/ch/qos/logback/logback-core/1.4.5/logback-core-1.4.5.jar:/home/juanmagdev/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.19.0/log4j-to-slf4j-2.19.0.jar:/home/juanmagdev/.m2/repository/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/home/juanmagdev/.m2/repository/org/slf4j/jul-to-slf4j/2.0.6/jul-to-slf4j-2.0.6.jar:/home/juanmagdev/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.0.4/spring-boot-starter-json-3.0.4.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.2/jackson-datatype-jsr310-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.0.4/spring-boot-starter-tomcat-3.0.4.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.5/tomcat-embed-el-10.1.5.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.5/tomcat-embed-websocket-10.1.5.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-web/6.0.6/spring-web-6.0.6.jar:/home/juanmagdev/.m2/repository/io/micrometer/micrometer-observation/1.10.4/micrometer-observation-1.10.4.jar:/home/juanmagdev/.m2/repository/io/micrometer/micrometer-commons/1.10.4/micrometer-commons-1.10.4.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-webmvc/6.0.6/spring-webmvc-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-expression/6.0.6/spring-expression-6.0.6.jar:/home/juanmagdev/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/juanmagdev/.m2/repository/com/h2database/h2/2.1.214/h2-2.1.214.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.0.4/spring-boot-starter-test-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-test/3.0.4/spring-boot-test-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.0.4/spring-boot-test-autoconfigure-3.0.4.jar:/home/juanmagdev/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/juanmagdev/.m2/repository/net/minidev/json-smart/2.4.8/json-smart-2.4.8.jar:/home/juanmagdev/.m2/repository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8.jar:/home/juanmagdev/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/juanmagdev/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/home/juanmagdev/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.1/jakarta.activation-api-2.1.1.jar:/home/juanmagdev/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar:/home/juanmagdev/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/juanmagdev/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/juanmagdev/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/juanmagdev/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/home/juanmagdev/.m2/repository/org/mockito/mockito-core/4.8.1/mockito-core-4.8.1.jar:/home/juanmagdev/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.23/byte-buddy-agent-1.12.23.jar:/home/juanmagdev/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/juanmagdev/.m2/repository/org/mockito/mockito-junit-jupiter/4.8.1/mockito-junit-jupiter-4.8.1.jar:/home/juanmagdev/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/juanmagdev/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-core/6.0.6/spring-core-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-jcl/6.0.6/spring-jcl-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-test/6.0.6/spring-test-6.0.6.jar:/home/juanmagdev/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.class.path" value="/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes/target/test-classes:/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes/target/classes:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.0.4/spring-boot-starter-data-jpa-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.0.4/spring-boot-starter-aop-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-aop/6.0.6/spring-aop-6.0.6.jar:/home/juanmagdev/.m2/repository/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.0.4/spring-boot-starter-jdbc-3.0.4.jar:/home/juanmagdev/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-jdbc/6.0.6/spring-jdbc-6.0.6.jar:/home/juanmagdev/.m2/repository/org/hibernate/orm/hibernate-core/6.1.7.Final/hibernate-core-6.1.7.Final.jar:/home/juanmagdev/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/juanmagdev/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/juanmagdev/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/juanmagdev/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/juanmagdev/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/home/juanmagdev/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/juanmagdev/.m2/repository/net/bytebuddy/byte-buddy/1.12.23/byte-buddy-1.12.23.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/home/juanmagdev/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/home/juanmagdev/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/juanmagdev/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar:/home/juanmagdev/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/juanmagdev/.m2/repository/org/springframework/data/spring-data-jpa/3.0.3/spring-data-jpa-3.0.3.jar:/home/juanmagdev/.m2/repository/org/springframework/data/spring-data-commons/3.0.3/spring-data-commons-3.0.3.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-orm/6.0.6/spring-orm-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-context/6.0.6/spring-context-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-tx/6.0.6/spring-tx-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-beans/6.0.6/spring-beans-6.0.6.jar:/home/juanmagdev/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/juanmagdev/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-aspects/6.0.6/spring-aspects-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.0.4/spring-boot-starter-web-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter/3.0.4/spring-boot-starter-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot/3.0.4/spring-boot-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.0.4/spring-boot-autoconfigure-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.0.4/spring-boot-starter-logging-3.0.4.jar:/home/juanmagdev/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar:/home/juanmagdev/.m2/repository/ch/qos/logback/logback-core/1.4.5/logback-core-1.4.5.jar:/home/juanmagdev/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.19.0/log4j-to-slf4j-2.19.0.jar:/home/juanmagdev/.m2/repository/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/home/juanmagdev/.m2/repository/org/slf4j/jul-to-slf4j/2.0.6/jul-to-slf4j-2.0.6.jar:/home/juanmagdev/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.0.4/spring-boot-starter-json-3.0.4.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.2/jackson-datatype-jsr310-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.0.4/spring-boot-starter-tomcat-3.0.4.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.5/tomcat-embed-el-10.1.5.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.5/tomcat-embed-websocket-10.1.5.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-web/6.0.6/spring-web-6.0.6.jar:/home/juanmagdev/.m2/repository/io/micrometer/micrometer-observation/1.10.4/micrometer-observation-1.10.4.jar:/home/juanmagdev/.m2/repository/io/micrometer/micrometer-commons/1.10.4/micrometer-commons-1.10.4.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-webmvc/6.0.6/spring-webmvc-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-expression/6.0.6/spring-expression-6.0.6.jar:/home/juanmagdev/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/juanmagdev/.m2/repository/com/h2database/h2/2.1.214/h2-2.1.214.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.0.4/spring-boot-starter-test-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-test/3.0.4/spring-boot-test-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.0.4/spring-boot-test-autoconfigure-3.0.4.jar:/home/juanmagdev/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/juanmagdev/.m2/repository/net/minidev/json-smart/2.4.8/json-smart-2.4.8.jar:/home/juanmagdev/.m2/repository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8.jar:/home/juanmagdev/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/juanmagdev/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/home/juanmagdev/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.1/jakarta.activation-api-2.1.1.jar:/home/juanmagdev/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar:/home/juanmagdev/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/juanmagdev/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/juanmagdev/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/juanmagdev/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/home/juanmagdev/.m2/repository/org/mockito/mockito-core/4.8.1/mockito-core-4.8.1.jar:/home/juanmagdev/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.23/byte-buddy-agent-1.12.23.jar:/home/juanmagdev/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/juanmagdev/.m2/repository/org/mockito/mockito-junit-jupiter/4.8.1/mockito-junit-jupiter-4.8.1.jar:/home/juanmagdev/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/juanmagdev/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-core/6.0.6/spring-core-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-jcl/6.0.6/spring-jcl-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-test/6.0.6/spring-test-6.0.6.jar:/home/juanmagdev/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="catalina.useNaming" value="false"/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-19-openjdk/lib"/>
-    <property name="sun.java.command" value="/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes/target/surefire/surefirebooter-20230316134621748_3.jar /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes/target/surefire 2023-03-16T13-46-21_119-jvmRun1 surefire-20230316134621748_1tmp surefire_0-20230316134621748_2tmp"/>
+    <property name="sun.java.command" value="/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes/target/surefire/surefirebooter-20230316191526468_3.jar /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes/target/surefire 2023-03-16T19-15-26_128-jvmRun1 surefire-20230316191526468_1tmp surefire_0-20230316191526468_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes/target/test-classes:/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes/target/classes:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.0.4/spring-boot-starter-data-jpa-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.0.4/spring-boot-starter-aop-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-aop/6.0.6/spring-aop-6.0.6.jar:/home/juanmagdev/.m2/repository/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.0.4/spring-boot-starter-jdbc-3.0.4.jar:/home/juanmagdev/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-jdbc/6.0.6/spring-jdbc-6.0.6.jar:/home/juanmagdev/.m2/repository/org/hibernate/orm/hibernate-core/6.1.7.Final/hibernate-core-6.1.7.Final.jar:/home/juanmagdev/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/juanmagdev/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/juanmagdev/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/juanmagdev/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/juanmagdev/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/home/juanmagdev/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/juanmagdev/.m2/repository/net/bytebuddy/byte-buddy/1.12.23/byte-buddy-1.12.23.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/home/juanmagdev/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/home/juanmagdev/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/juanmagdev/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar:/home/juanmagdev/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/juanmagdev/.m2/repository/org/springframework/data/spring-data-jpa/3.0.3/spring-data-jpa-3.0.3.jar:/home/juanmagdev/.m2/repository/org/springframework/data/spring-data-commons/3.0.3/spring-data-commons-3.0.3.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-orm/6.0.6/spring-orm-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-context/6.0.6/spring-context-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-tx/6.0.6/spring-tx-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-beans/6.0.6/spring-beans-6.0.6.jar:/home/juanmagdev/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/juanmagdev/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-aspects/6.0.6/spring-aspects-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.0.4/spring-boot-starter-web-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter/3.0.4/spring-boot-starter-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot/3.0.4/spring-boot-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.0.4/spring-boot-autoconfigure-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.0.4/spring-boot-starter-logging-3.0.4.jar:/home/juanmagdev/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar:/home/juanmagdev/.m2/repository/ch/qos/logback/logback-core/1.4.5/logback-core-1.4.5.jar:/home/juanmagdev/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.19.0/log4j-to-slf4j-2.19.0.jar:/home/juanmagdev/.m2/repository/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/home/juanmagdev/.m2/repository/org/slf4j/jul-to-slf4j/2.0.6/jul-to-slf4j-2.0.6.jar:/home/juanmagdev/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.0.4/spring-boot-starter-json-3.0.4.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.2/jackson-datatype-jsr310-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.0.4/spring-boot-starter-tomcat-3.0.4.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.5/tomcat-embed-el-10.1.5.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.5/tomcat-embed-websocket-10.1.5.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-web/6.0.6/spring-web-6.0.6.jar:/home/juanmagdev/.m2/repository/io/micrometer/micrometer-observation/1.10.4/micrometer-observation-1.10.4.jar:/home/juanmagdev/.m2/repository/io/micrometer/micrometer-commons/1.10.4/micrometer-commons-1.10.4.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-webmvc/6.0.6/spring-webmvc-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-expression/6.0.6/spring-expression-6.0.6.jar:/home/juanmagdev/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/juanmagdev/.m2/repository/com/h2database/h2/2.1.214/h2-2.1.214.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.0.4/spring-boot-starter-test-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-test/3.0.4/spring-boot-test-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.0.4/spring-boot-test-autoconfigure-3.0.4.jar:/home/juanmagdev/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/juanmagdev/.m2/repository/net/minidev/json-smart/2.4.8/json-smart-2.4.8.jar:/home/juanmagdev/.m2/repository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8.jar:/home/juanmagdev/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/juanmagdev/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/home/juanmagdev/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.1/jakarta.activation-api-2.1.1.jar:/home/juanmagdev/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar:/home/juanmagdev/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/juanmagdev/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/juanmagdev/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/juanmagdev/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/home/juanmagdev/.m2/repository/org/mockito/mockito-core/4.8.1/mockito-core-4.8.1.jar:/home/juanmagdev/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.23/byte-buddy-agent-1.12.23.jar:/home/juanmagdev/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/juanmagdev/.m2/repository/org/mockito/mockito-junit-jupiter/4.8.1/mockito-junit-jupiter-4.8.1.jar:/home/juanmagdev/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/juanmagdev/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-core/6.0.6/spring-core-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-jcl/6.0.6/spring-jcl-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-test/6.0.6/spring-test-6.0.6.jar:/home/juanmagdev/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="surefire.test.class.path" value="/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes/target/test-classes:/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes/target/classes:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.0.4/spring-boot-starter-data-jpa-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.0.4/spring-boot-starter-aop-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-aop/6.0.6/spring-aop-6.0.6.jar:/home/juanmagdev/.m2/repository/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.0.4/spring-boot-starter-jdbc-3.0.4.jar:/home/juanmagdev/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-jdbc/6.0.6/spring-jdbc-6.0.6.jar:/home/juanmagdev/.m2/repository/org/hibernate/orm/hibernate-core/6.1.7.Final/hibernate-core-6.1.7.Final.jar:/home/juanmagdev/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/juanmagdev/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/juanmagdev/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/juanmagdev/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/juanmagdev/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:/home/juanmagdev/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/juanmagdev/.m2/repository/net/bytebuddy/byte-buddy/1.12.23/byte-buddy-1.12.23.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/home/juanmagdev/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/juanmagdev/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/home/juanmagdev/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/juanmagdev/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar:/home/juanmagdev/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/juanmagdev/.m2/repository/org/springframework/data/spring-data-jpa/3.0.3/spring-data-jpa-3.0.3.jar:/home/juanmagdev/.m2/repository/org/springframework/data/spring-data-commons/3.0.3/spring-data-commons-3.0.3.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-orm/6.0.6/spring-orm-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-context/6.0.6/spring-context-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-tx/6.0.6/spring-tx-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-beans/6.0.6/spring-beans-6.0.6.jar:/home/juanmagdev/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/juanmagdev/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-aspects/6.0.6/spring-aspects-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.0.4/spring-boot-starter-web-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter/3.0.4/spring-boot-starter-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot/3.0.4/spring-boot-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.0.4/spring-boot-autoconfigure-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.0.4/spring-boot-starter-logging-3.0.4.jar:/home/juanmagdev/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar:/home/juanmagdev/.m2/repository/ch/qos/logback/logback-core/1.4.5/logback-core-1.4.5.jar:/home/juanmagdev/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.19.0/log4j-to-slf4j-2.19.0.jar:/home/juanmagdev/.m2/repository/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/home/juanmagdev/.m2/repository/org/slf4j/jul-to-slf4j/2.0.6/jul-to-slf4j-2.0.6.jar:/home/juanmagdev/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.0.4/spring-boot-starter-json-3.0.4.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.2/jackson-datatype-jdk8-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.2/jackson-datatype-jsr310-2.14.2.jar:/home/juanmagdev/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.2/jackson-module-parameter-names-2.14.2.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.0.4/spring-boot-starter-tomcat-3.0.4.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.5/tomcat-embed-el-10.1.5.jar:/home/juanmagdev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.5/tomcat-embed-websocket-10.1.5.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-web/6.0.6/spring-web-6.0.6.jar:/home/juanmagdev/.m2/repository/io/micrometer/micrometer-observation/1.10.4/micrometer-observation-1.10.4.jar:/home/juanmagdev/.m2/repository/io/micrometer/micrometer-commons/1.10.4/micrometer-commons-1.10.4.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-webmvc/6.0.6/spring-webmvc-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-expression/6.0.6/spring-expression-6.0.6.jar:/home/juanmagdev/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/juanmagdev/.m2/repository/com/h2database/h2/2.1.214/h2-2.1.214.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.0.4/spring-boot-starter-test-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-test/3.0.4/spring-boot-test-3.0.4.jar:/home/juanmagdev/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.0.4/spring-boot-test-autoconfigure-3.0.4.jar:/home/juanmagdev/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/juanmagdev/.m2/repository/net/minidev/json-smart/2.4.8/json-smart-2.4.8.jar:/home/juanmagdev/.m2/repository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8.jar:/home/juanmagdev/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/juanmagdev/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/home/juanmagdev/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.1/jakarta.activation-api-2.1.1.jar:/home/juanmagdev/.m2/repository/org/assertj/assertj-core/3.23.1/assertj-core-3.23.1.jar:/home/juanmagdev/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/juanmagdev/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/juanmagdev/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/juanmagdev/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/juanmagdev/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/home/juanmagdev/.m2/repository/org/mockito/mockito-core/4.8.1/mockito-core-4.8.1.jar:/home/juanmagdev/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.23/byte-buddy-agent-1.12.23.jar:/home/juanmagdev/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/juanmagdev/.m2/repository/org/mockito/mockito-junit-jupiter/4.8.1/mockito-junit-jupiter-4.8.1.jar:/home/juanmagdev/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/juanmagdev/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-core/6.0.6/spring-core-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-jcl/6.0.6/spring-jcl-6.0.6.jar:/home/juanmagdev/.m2/repository/org/springframework/spring-test/6.0.6/spring-test-6.0.6.jar:/home/juanmagdev/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/juanmagdev"/>
     <property name="user.language" value="es"/>
@@ -25,14 +25,14 @@
     <property name="java.version.date" value="2023-01-17"/>
     <property name="java.home" value="/usr/lib/jvm/java-19-openjdk"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes"/>
+    <property name="basedir" value="/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes/target/surefire/surefirebooter-20230316134621748_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes/target/surefire/surefirebooter-20230316191526468_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7"/>
     <property name="user.name" value="juanmagdev"/>
@@ -45,15 +45,15 @@
     <property name="localRepository" value="/home/juanmagdev/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="catalina.home" value="/tmp/tomcat.0.10589654125896116023"/>
-    <property name="com.zaxxer.hikari.pool_number" value="10"/>
+    <property name="catalina.home" value="/tmp/tomcat.0.6768642628713438589"/>
+    <property name="com.zaxxer.hikari.pool_number" value="17"/>
     <property name="java.version" value="19.0.2"/>
-    <property name="user.dir" value="/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes"/>
+    <property name="user.dir" value="/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="89165"/>
+    <property name="PID" value="31706"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
-    <property name="catalina.base" value="/tmp/tomcat.0.204503342282361610"/>
+    <property name="catalina.base" value="/tmp/tomcat.0.5681807194736762977"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.vm.info" value="mixed mode"/>
@@ -63,24 +63,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="insertaIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.789">
-    <system-out><![CDATA[13:46:23.425 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [Practica3ApplicationTests]: using SpringBootContextLoader
-13:46:23.435 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [es.uma.informatica.practica3.Practica3ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-13:46:23.436 [main] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Ignoring class [es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia]; it must be static, non-private, non-final, and annotated with @Configuration to be considered a default configuration class.
-13:46:23.437 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [es.uma.informatica.practica3.Practica3ApplicationTests]: Practica3ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:46:23.485 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [Practica3ApplicationTests]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer]
-13:46:23.662 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes/target/classes/es/uma/informatica/practica3/Practica3Application.class]
-13:46:23.664 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration es.uma.informatica.practica3.Practica3Application for test class es.uma.informatica.practica3.Practica3ApplicationTests
-13:46:23.931 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [Practica3ApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
-13:46:23.933 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [Practica3ApplicationTests], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD]
-13:46:23.951 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [BaseDatosVacia]: using SpringBootContextLoader
-13:46:23.952 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia]: no resource found for suffixes {-context.xml, Context.groovy}.
-13:46:23.953 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia]: BaseDatosVacia does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:46:23.958 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [BaseDatosVacia]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer]
-13:46:23.959 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration es.uma.informatica.practica3.Practica3Application for test class es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia
-13:46:23.963 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [BaseDatosVacia]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
-13:46:23.965 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [BaseDatosVacia], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD]
-13:46:23.989 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class es.uma.informatica.practica3.Practica3ApplicationTests
+  <testcase name="insertaIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.621">
+    <system-out><![CDATA[19:15:27.410 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [Practica3ApplicationTests]: using SpringBootContextLoader
+19:15:27.416 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [es.uma.informatica.practica3.Practica3ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:15:27.417 [main] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Ignoring class [es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia]; it must be static, non-private, non-final, and annotated with @Configuration to be considered a default configuration class.
+19:15:27.417 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [es.uma.informatica.practica3.Practica3ApplicationTests]: Practica3ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:15:27.447 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [Practica3ApplicationTests]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer]
+19:15:27.545 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes/target/classes/es/uma/informatica/practica3/Practica3Application.class]
+19:15:27.546 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration es.uma.informatica.practica3.Practica3Application for test class es.uma.informatica.practica3.Practica3ApplicationTests
+19:15:27.687 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [Practica3ApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+19:15:27.688 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [Practica3ApplicationTests], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD]
+19:15:27.697 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [BaseDatosVacia]: using SpringBootContextLoader
+19:15:27.698 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:15:27.698 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia]: BaseDatosVacia does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:15:27.700 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [BaseDatosVacia]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer]
+19:15:27.701 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration es.uma.informatica.practica3.Practica3Application for test class es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia
+19:15:27.705 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [BaseDatosVacia]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+19:15:27.706 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [BaseDatosVacia], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD]
+19:15:27.719 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class es.uma.informatica.practica3.Practica3ApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -90,39 +90,39 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:24.572+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:24.575+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:25.618+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:25.691+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:26.519+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:26.536+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:26.536+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:26.665+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:26.667+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2050 ms
-2023-03-16T13:46:26.728+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-16T13:46:27.224+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:27.226+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-16T13:46:27.249+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:27.509+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:27.605+01:00  INFO 89165 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-03-16T13:46:28.183+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:29.556+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:29.566+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:30.103+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:30.729+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 41589 (http) with context path ''
-2023-03-16T13:46:30.739+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 6.693 seconds (process running for 8.909)
-2023-03-16T13:46:31.115+01:00  INFO 89165 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:31.115+01:00  INFO 89165 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:31.117+01:00  INFO 89165 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:31.513+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:31.514+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:31.521+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:31.522+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:31.532+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-16T13:46:31.535+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-16T19:15:28.044+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:28.045+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:28.599+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:28.657+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:29.161+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:29.172+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:29.172+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:29.260+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:29.261+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1190 ms
+2023-03-16T19:15:29.292+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-16T19:15:29.624+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:29.626+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-16T19:15:29.641+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:29.804+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:29.852+01:00  INFO 31706 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-03-16T19:15:30.156+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:31.073+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:31.083+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:31.456+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:31.793+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 42235 (http) with context path ''
+2023-03-16T19:15:31.800+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 4.053 seconds (process running for 5.286)
+2023-03-16T19:15:32.083+01:00  INFO 31706 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:32.083+01:00  INFO 31706 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:32.084+01:00  INFO 31706 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-16T19:15:32.414+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:32.415+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:32.420+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:32.421+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:32.425+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-16T19:15:32.427+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="obtenerTodosIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.125">
+  <testcase name="obtenerTodosIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.095">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -132,38 +132,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:31.586+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:31.586+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:31.753+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:31.763+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:31.871+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:31.872+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:31.872+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:31.887+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:31.888+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 300 ms
-2023-03-16T13:46:31.910+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2023-03-16T13:46:31.914+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:31.914+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2023-03-16T13:46:31.915+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:31.957+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:31.965+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:32.049+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:32.050+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:32.145+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:32.287+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 37455 (http) with context path ''
-2023-03-16T13:46:32.291+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.743 seconds (process running for 10.462)
-2023-03-16T13:46:32.310+01:00  INFO 89165 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:32.310+01:00  INFO 89165 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:32.311+01:00  INFO 89165 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:32.408+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:32.409+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:32.413+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:32.413+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:32.419+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2023-03-16T13:46:32.420+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-03-16T19:15:32.457+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:32.458+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:32.565+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:32.571+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:32.630+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:32.631+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:32.631+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:32.641+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:32.641+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 182 ms
+2023-03-16T19:15:32.654+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-03-16T19:15:32.657+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:32.657+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-03-16T19:15:32.657+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:32.678+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:32.681+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:32.724+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:32.724+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:32.780+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:32.857+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 45913 (http) with context path ''
+2023-03-16T19:15:32.860+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.426 seconds (process running for 6.346)
+2023-03-16T19:15:32.871+01:00  INFO 31706 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:32.872+01:00  INFO 31706 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:32.873+01:00  INFO 31706 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:32.950+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:32.950+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:32.953+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:32.953+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:32.956+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-03-16T19:15:32.957+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="actualizarProducto" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.549">
+  <testcase name="eliminarProducto" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.281">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -173,38 +173,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:32.454+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:32.455+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:32.605+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:32.615+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:32.703+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:32.705+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:32.705+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:32.718+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:32.718+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 262 ms
-2023-03-16T13:46:32.738+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2023-03-16T13:46:32.744+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:32.744+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2023-03-16T13:46:32.744+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:32.779+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:32.785+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:32.862+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:32.863+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:32.987+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:33.130+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 41901 (http) with context path ''
-2023-03-16T13:46:33.134+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.71 seconds (process running for 11.304)
-2023-03-16T13:46:33.152+01:00  INFO 89165 --- [o-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:33.152+01:00  INFO 89165 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:33.154+01:00  INFO 89165 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-03-16T13:46:33.676+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:33.677+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:33.681+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:33.682+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:33.687+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2023-03-16T13:46:33.689+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-03-16T19:15:32.975+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:32.975+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:33.067+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:33.073+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:33.130+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:33.131+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:33.131+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:33.141+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:33.141+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 165 ms
+2023-03-16T19:15:33.151+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-03-16T19:15:33.154+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:33.154+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-03-16T19:15:33.154+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:33.171+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:33.175+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:33.220+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:33.221+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:33.279+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:33.343+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 37315 (http) with context path ''
+2023-03-16T19:15:33.345+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.385 seconds (process running for 6.831)
+2023-03-16T19:15:33.354+01:00  INFO 31706 --- [o-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:33.354+01:00  INFO 31706 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:33.355+01:00  INFO 31706 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:33.622+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:33.622+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:33.624+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:33.625+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:33.628+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-03-16T19:15:33.628+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="devuelveListaVaciaProductos" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.051">
+  <testcase name="obtenerTodosProductos" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.065">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -214,38 +214,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:33.719+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:33.720+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:33.889+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:33.901+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:34.000+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:34.001+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:34.001+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:34.018+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:34.018+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 296 ms
-2023-03-16T13:46:34.041+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2023-03-16T13:46:34.047+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:34.048+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2023-03-16T13:46:34.048+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:34.086+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:34.092+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:34.178+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:34.179+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:34.245+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:34.337+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 45999 (http) with context path ''
-2023-03-16T13:46:34.341+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.649 seconds (process running for 12.512)
-2023-03-16T13:46:34.355+01:00  INFO 89165 --- [o-auto-4-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:34.355+01:00  INFO 89165 --- [o-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:34.356+01:00  INFO 89165 --- [o-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:34.384+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:34.385+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:34.390+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:34.390+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:34.396+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2023-03-16T13:46:34.397+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-03-16T19:15:33.645+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:33.645+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:33.725+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:33.730+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:33.771+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:33.772+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:33.772+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:33.778+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:33.778+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 132 ms
+2023-03-16T19:15:33.786+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-03-16T19:15:33.788+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:33.788+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-03-16T19:15:33.789+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:33.803+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:33.806+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:33.849+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:33.849+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:33.891+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:33.950+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 36179 (http) with context path ''
+2023-03-16T19:15:33.954+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.323 seconds (process running for 7.44)
+2023-03-16T19:15:33.961+01:00  INFO 31706 --- [o-auto-4-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:33.962+01:00  INFO 31706 --- [o-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:33.962+01:00  INFO 31706 --- [o-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-16T19:15:34.015+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:34.016+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:34.018+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:34.018+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:34.021+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-03-16T19:15:34.022+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="eliminarIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.085">
+  <testcase name="actualizarProducto" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.062">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -255,38 +255,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:34.439+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:34.440+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:34.555+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:34.563+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:34.633+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:34.634+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:34.635+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:34.649+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:34.650+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 208 ms
-2023-03-16T13:46:34.676+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2023-03-16T13:46:34.680+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:34.680+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2023-03-16T13:46:34.680+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:34.711+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:34.715+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:34.781+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:34.782+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:34.832+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:34.980+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 43407 (http) with context path ''
-2023-03-16T13:46:34.989+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.587 seconds (process running for 13.159)
-2023-03-16T13:46:35.003+01:00  INFO 89165 --- [o-auto-5-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:35.003+01:00  INFO 89165 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:35.004+01:00  INFO 89165 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:35.068+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:35.069+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:35.073+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:35.073+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:35.077+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2023-03-16T13:46:35.078+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-03-16T19:15:34.041+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:34.041+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:34.108+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:34.113+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:34.155+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:34.156+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:34.156+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:34.163+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:34.164+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 121 ms
+2023-03-16T19:15:34.171+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-03-16T19:15:34.173+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:34.173+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-03-16T19:15:34.173+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:34.189+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:34.193+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:34.235+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:34.235+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:34.272+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:34.344+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 37785 (http) with context path ''
+2023-03-16T19:15:34.349+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.325 seconds (process running for 7.835)
+2023-03-16T19:15:34.357+01:00  INFO 31706 --- [o-auto-5-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:34.357+01:00  INFO 31706 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:34.358+01:00  INFO 31706 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:34.406+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:34.407+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:34.409+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:34.409+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:34.412+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-03-16T19:15:34.413+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="insertaRepetidoIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.083">
+  <testcase name="devuelveListaVaciaProductos" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.034">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -296,38 +296,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:35.116+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:35.116+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:35.237+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:35.245+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:35.313+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:35.314+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:35.314+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:35.328+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:35.329+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 211 ms
-2023-03-16T13:46:35.346+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2023-03-16T13:46:35.351+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:35.352+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
-2023-03-16T13:46:35.352+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:35.385+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:35.392+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:35.490+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:35.491+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:35.565+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:35.731+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 38203 (http) with context path ''
-2023-03-16T13:46:35.735+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.652 seconds (process running for 13.906)
-2023-03-16T13:46:35.752+01:00  INFO 89165 --- [o-auto-6-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:35.752+01:00  INFO 89165 --- [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:35.753+01:00  INFO 89165 --- [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:35.813+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:35.814+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:35.818+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:35.818+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:35.822+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
-2023-03-16T13:46:35.823+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-03-16T19:15:34.433+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:34.433+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:34.488+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:34.491+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:34.522+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:34.523+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:34.523+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:34.528+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:34.528+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 94 ms
+2023-03-16T19:15:34.535+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-03-16T19:15:34.538+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:34.538+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-03-16T19:15:34.538+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:34.549+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:34.551+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:34.586+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:34.586+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:34.621+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:34.665+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 39439 (http) with context path ''
+2023-03-16T19:15:34.667+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.251 seconds (process running for 8.153)
+2023-03-16T19:15:34.674+01:00  INFO 31706 --- [o-auto-6-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:34.674+01:00  INFO 31706 --- [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:34.675+01:00  INFO 31706 --- [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:34.691+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:34.692+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:34.694+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:34.694+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:34.696+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-03-16T19:15:34.703+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="obtenerIngrelediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.073">
+  <testcase name="obtenerProducto" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.057">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -337,38 +337,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:35.848+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:35.848+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:35.956+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:35.961+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:36.023+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:36.023+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:36.024+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:36.032+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:36.032+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 182 ms
-2023-03-16T13:46:36.044+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
-2023-03-16T13:46:36.046+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:36.047+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
-2023-03-16T13:46:36.047+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:36.071+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:36.076+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:36.142+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:36.143+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:36.184+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:36.246+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 42879 (http) with context path ''
-2023-03-16T13:46:36.249+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.422 seconds (process running for 14.419)
-2023-03-16T13:46:36.260+01:00  INFO 89165 --- [o-auto-7-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:36.260+01:00  INFO 89165 --- [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:36.261+01:00  INFO 89165 --- [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:36.314+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:36.314+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:36.319+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:36.319+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:36.323+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
-2023-03-16T13:46:36.324+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-03-16T19:15:34.717+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:34.717+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:34.775+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:34.778+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:34.808+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:34.808+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:34.808+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:34.814+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:34.814+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 94 ms
+2023-03-16T19:15:34.824+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-03-16T19:15:34.827+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn57: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:34.827+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-03-16T19:15:34.827+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:34.844+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:34.846+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:34.880+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:34.880+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:34.905+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:34.942+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 34999 (http) with context path ''
+2023-03-16T19:15:34.943+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.237 seconds (process running for 8.429)
+2023-03-16T19:15:34.949+01:00  INFO 31706 --- [o-auto-7-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:34.949+01:00  INFO 31706 --- [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:34.950+01:00  INFO 31706 --- [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:34.987+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:34.988+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:34.989+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:34.990+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:34.992+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-03-16T19:15:35.001+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="insertarProducto" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.058">
+  <testcase name="eliminarIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.039">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -378,38 +378,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:36.367+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:36.367+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:36.535+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:36.540+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:36.602+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:36.603+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:36.603+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:36.611+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:36.611+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 241 ms
-2023-03-16T13:46:36.624+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
-2023-03-16T13:46:36.627+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:36.627+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
-2023-03-16T13:46:36.627+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:36.648+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:36.652+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:36.716+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:36.716+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:36.774+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:36.850+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 46677 (http) with context path ''
-2023-03-16T13:46:36.853+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.525 seconds (process running for 15.023)
-2023-03-16T13:46:36.867+01:00  INFO 89165 --- [o-auto-8-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:36.868+01:00  INFO 89165 --- [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:36.869+01:00  INFO 89165 --- [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:36.906+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:36.906+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:36.909+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:36.909+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:36.913+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
-2023-03-16T13:46:36.913+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-03-16T19:15:35.015+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:35.015+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:35.074+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:35.077+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:35.104+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:35.105+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:35.105+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:35.109+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:35.109+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 93 ms
+2023-03-16T19:15:35.116+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-03-16T19:15:35.118+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn65: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:35.118+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-03-16T19:15:35.118+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:35.132+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:35.134+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:35.169+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:35.169+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:35.198+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:35.249+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 42915 (http) with context path ''
+2023-03-16T19:15:35.252+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.248 seconds (process running for 8.738)
+2023-03-16T19:15:35.259+01:00  INFO 31706 --- [o-auto-8-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:35.259+01:00  INFO 31706 --- [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:35.260+01:00  INFO 31706 --- [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-16T19:15:35.281+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:35.281+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:35.283+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:35.283+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:35.285+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-03-16T19:15:35.292+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="errorConIngredienteConcreto" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.038">
+  <testcase name="insertaRepetidoIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.06">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -419,38 +419,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:36.936+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:36.936+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:37.068+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:37.075+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:37.120+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:37.121+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:37.121+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:37.126+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:37.126+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
-2023-03-16T13:46:37.139+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
-2023-03-16T13:46:37.143+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn80: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:37.143+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
-2023-03-16T13:46:37.143+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:37.164+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:37.171+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:37.231+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:37.232+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:37.285+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:37.346+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 46305 (http) with context path ''
-2023-03-16T13:46:37.349+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.433 seconds (process running for 15.519)
-2023-03-16T13:46:37.364+01:00  INFO 89165 --- [o-auto-9-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:37.365+01:00  INFO 89165 --- [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:37.366+01:00  INFO 89165 --- [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:37.382+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:37.383+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:37.386+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:37.386+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:37.389+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
-2023-03-16T13:46:37.390+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2023-03-16T19:15:35.308+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:35.308+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:35.362+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:35.366+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:35.397+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:35.398+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:35.398+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:35.403+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:35.403+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 94 ms
+2023-03-16T19:15:35.410+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2023-03-16T19:15:35.412+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn73: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:35.412+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2023-03-16T19:15:35.412+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:35.429+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:35.432+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:35.472+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:35.473+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:35.505+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:35.569+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 37521 (http) with context path ''
+2023-03-16T19:15:35.571+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.276 seconds (process running for 9.057)
+2023-03-16T19:15:35.581+01:00  INFO 31706 --- [o-auto-9-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:35.582+01:00  INFO 31706 --- [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:35.584+01:00  INFO 31706 --- [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-16T19:15:35.624+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:35.625+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:35.630+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:35.630+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:35.633+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2023-03-16T19:15:35.634+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="modificarIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.059">
+  <testcase name="obtenerProductoNoExistente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.036">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -460,35 +460,323 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.4)
 
-2023-03-16T13:46:37.413+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 89165 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/p3/practica3-estudiantes)
-2023-03-16T13:46:37.414+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-03-16T13:46:37.507+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-16T13:46:37.513+01:00  INFO 89165 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
-2023-03-16T13:46:37.562+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-03-16T13:46:37.563+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-16T13:46:37.563+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-16T13:46:37.571+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-16T13:46:37.571+01:00  INFO 89165 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 155 ms
-2023-03-16T13:46:37.593+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
-2023-03-16T13:46:37.597+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn90: url=jdbc:h2:mem:test user=SA
-2023-03-16T13:46:37.597+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
-2023-03-16T13:46:37.598+01:00  INFO 89165 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
-2023-03-16T13:46:37.617+01:00  INFO 89165 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-16T13:46:37.620+01:00  INFO 89165 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-16T13:46:37.664+01:00  INFO 89165 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-16T13:46:37.664+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:37.718+01:00  WARN 89165 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-16T13:46:37.786+01:00  INFO 89165 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 33743 (http) with context path ''
-2023-03-16T13:46:37.790+01:00  INFO 89165 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.396 seconds (process running for 15.96)
-2023-03-16T13:46:37.803+01:00  INFO 89165 --- [-auto-10-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-16T13:46:37.803+01:00  INFO 89165 --- [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-16T13:46:37.804+01:00  INFO 89165 --- [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-16T13:46:37.844+01:00  INFO 89165 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-16T13:46:37.844+01:00  INFO 89165 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-16T13:46:37.848+01:00  INFO 89165 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-16T13:46:37.848+01:00  INFO 89165 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2023-03-16T13:46:37.851+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
-2023-03-16T13:46:37.852+01:00  INFO 89165 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2023-03-16T19:15:35.655+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:35.656+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:35.710+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:35.714+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:35.750+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:35.751+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:35.751+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:35.755+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:35.755+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 97 ms
+2023-03-16T19:15:35.763+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2023-03-16T19:15:35.764+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn83: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:35.764+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2023-03-16T19:15:35.765+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:35.776+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:35.779+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:35.803+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:35.804+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:35.839+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:35.880+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 36455 (http) with context path ''
+2023-03-16T19:15:35.882+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.245 seconds (process running for 9.368)
+2023-03-16T19:15:35.887+01:00  INFO 31706 --- [-auto-10-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:35.887+01:00  INFO 31706 --- [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:35.888+01:00  INFO 31706 --- [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:35.896+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:35.896+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:35.903+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:35.904+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:35.907+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2023-03-16T19:15:35.918+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="insertarProducto" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.036">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T19:15:35.936+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:35.937+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:35.996+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:36.000+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:36.036+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:36.037+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:36.037+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:36.042+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:36.042+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 104 ms
+2023-03-16T19:15:36.050+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2023-03-16T19:15:36.051+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection conn89: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:36.051+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2023-03-16T19:15:36.051+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:36.063+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:36.065+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:36.090+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:36.090+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:36.115+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:36.156+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 35295 (http) with context path ''
+2023-03-16T19:15:36.157+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.234 seconds (process running for 9.643)
+2023-03-16T19:15:36.163+01:00  INFO 31706 --- [-auto-11-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:36.163+01:00  INFO 31706 --- [-auto-11-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:36.164+01:00  INFO 31706 --- [-auto-11-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:36.180+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:36.181+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:36.182+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:36.183+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:36.185+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2023-03-16T19:15:36.194+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="insertarProductoRepetido" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.064">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T19:15:36.207+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:36.207+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:36.259+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:36.263+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:36.288+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:36.289+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:36.289+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:36.293+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:36.293+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 85 ms
+2023-03-16T19:15:36.299+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2023-03-16T19:15:36.301+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection conn94: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:36.301+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2023-03-16T19:15:36.301+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:36.311+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:36.314+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:36.342+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:36.343+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:36.370+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:36.410+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 37717 (http) with context path ''
+2023-03-16T19:15:36.411+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.215 seconds (process running for 9.897)
+2023-03-16T19:15:36.418+01:00  INFO 31706 --- [-auto-12-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:36.418+01:00  INFO 31706 --- [-auto-12-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:36.419+01:00  INFO 31706 --- [-auto-12-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:36.462+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:36.462+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:36.465+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:36.465+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:36.466+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2023-03-16T19:15:36.476+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="eliminarProductoNoExistente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.021">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T19:15:36.544+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:36.545+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:36.605+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:36.608+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:36.641+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:36.641+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:36.642+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:36.646+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:36.646+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 99 ms
+2023-03-16T19:15:36.652+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2023-03-16T19:15:36.654+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection conn102: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:36.654+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2023-03-16T19:15:36.654+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:36.664+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:36.666+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:36.688+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:36.689+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:36.712+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:36.752+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 35815 (http) with context path ''
+2023-03-16T19:15:36.754+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.269 seconds (process running for 10.24)
+2023-03-16T19:15:36.758+01:00  INFO 31706 --- [-auto-13-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:36.759+01:00  INFO 31706 --- [-auto-13-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:36.759+01:00  INFO 31706 --- [-auto-13-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-16T19:15:36.765+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:36.766+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:36.767+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:36.768+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:36.769+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2023-03-16T19:15:36.776+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="obtenerIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.038">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T19:15:36.805+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:36.806+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:36.860+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:36.863+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:36.886+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:36.886+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:36.886+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:36.890+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:36.890+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 83 ms
+2023-03-16T19:15:36.896+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2023-03-16T19:15:36.898+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection conn105: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:36.898+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2023-03-16T19:15:36.898+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:36.908+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:36.910+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:36.943+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:36.943+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:36.966+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:37.000+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 44183 (http) with context path ''
+2023-03-16T19:15:37.001+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.22 seconds (process running for 10.488)
+2023-03-16T19:15:37.007+01:00  INFO 31706 --- [-auto-14-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:37.007+01:00  INFO 31706 --- [-auto-14-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:37.008+01:00  INFO 31706 --- [-auto-14-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:37.029+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:37.029+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:37.031+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:37.031+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:37.033+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2023-03-16T19:15:37.041+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="errorConIngredienteConcreto" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.027">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T19:15:37.050+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:37.051+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:37.096+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:37.099+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:37.122+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:37.122+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:37.122+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:37.126+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:37.126+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 74 ms
+2023-03-16T19:15:37.132+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2023-03-16T19:15:37.133+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection conn110: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:37.134+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2023-03-16T19:15:37.134+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:37.144+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:37.146+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:37.167+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:37.167+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:37.189+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:37.225+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 38429 (http) with context path ''
+2023-03-16T19:15:37.227+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.184 seconds (process running for 10.713)
+2023-03-16T19:15:37.233+01:00  INFO 31706 --- [-auto-15-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:37.233+01:00  INFO 31706 --- [-auto-15-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:37.234+01:00  INFO 31706 --- [-auto-15-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:37.244+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:37.245+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:37.247+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:37.247+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:37.248+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2023-03-16T19:15:37.256+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="modificarIngrediente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.035">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T19:15:37.266+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:37.267+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:37.316+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:37.322+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:37.353+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:37.353+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:37.353+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:37.358+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:37.358+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 91 ms
+2023-03-16T19:15:37.364+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2023-03-16T19:15:37.365+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection conn113: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:37.365+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2023-03-16T19:15:37.366+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:37.375+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:37.377+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:37.399+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:37.399+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:37.426+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:37.461+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 39671 (http) with context path ''
+2023-03-16T19:15:37.463+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.205 seconds (process running for 10.949)
+2023-03-16T19:15:37.468+01:00  INFO 31706 --- [-auto-16-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:37.468+01:00  INFO 31706 --- [-auto-16-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:37.469+01:00  INFO 31706 --- [-auto-16-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:37.489+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:37.490+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:37.491+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:37.492+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:37.493+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2023-03-16T19:15:37.498+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="modificaIngredienteNoExistente" classname="es.uma.informatica.practica3.Practica3ApplicationTests$BaseDatosVacia" time="0.031">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T19:15:37.534+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Starting Practica3ApplicationTests using Java 19.0.2 with PID 31706 (started by juanmagdev in /home/juanmagdev/Documentos/Universidad/SII/Practicas-SII/p3/practica3-estudiantes)
+2023-03-16T19:15:37.535+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T19:15:37.578+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T19:15:37.581+01:00  INFO 31706 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-03-16T19:15:37.602+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-16T19:15:37.603+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-16T19:15:37.603+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-16T19:15:37.606+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-16T19:15:37.606+01:00  INFO 31706 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 70 ms
+2023-03-16T19:15:37.612+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2023-03-16T19:15:37.613+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection conn117: url=jdbc:h2:mem:test user=SA
+2023-03-16T19:15:37.614+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2023-03-16T19:15:37.614+01:00  INFO 31706 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-03-16T19:15:37.625+01:00  INFO 31706 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T19:15:37.627+01:00  INFO 31706 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T19:15:37.648+01:00  INFO 31706 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T19:15:37.648+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:37.670+01:00  WARN 31706 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T19:15:37.703+01:00  INFO 31706 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 34987 (http) with context path ''
+2023-03-16T19:15:37.705+01:00  INFO 31706 --- [           main] e.u.i.p.Practica3ApplicationTests        : Started Practica3ApplicationTests in 0.198 seconds (process running for 11.191)
+2023-03-16T19:15:37.709+01:00  INFO 31706 --- [-auto-17-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16T19:15:37.709+01:00  INFO 31706 --- [-auto-17-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-16T19:15:37.710+01:00  INFO 31706 --- [-auto-17-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-16T19:15:37.715+01:00  WARN 31706 --- [-auto-17-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void es.uma.informatica.practica3.controladores.IngredienteRest.actualizarIngrediente(java.lang.Long,es.uma.informatica.practica3.dtos.IngredienteDTO)]
+2023-03-16T19:15:37.721+01:00  INFO 31706 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-16T19:15:37.722+01:00  INFO 31706 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16T19:15:37.725+01:00  INFO 31706 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T19:15:37.725+01:00  INFO 31706 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-16T19:15:37.727+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2023-03-16T19:15:37.736+01:00  INFO 31706 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
 ]]></system-out>
   </testcase>
 </testsuite>

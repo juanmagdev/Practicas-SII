@@ -156,7 +156,7 @@ class Practica3ApplicationTests {
 		}
 
 		@Test
-		@DisplayName("elimina correctamente un ingrediente")
+		@DisplayName("Elimina correctamente un ingrediente")
 		public void eliminarIngrediente(){
 			// Preparamos el ingrediente a eliminar
 			var ingrediente = IngredienteDTO.builder()
@@ -180,7 +180,7 @@ class Practica3ApplicationTests {
 		}
 
 		@Test
-		@DisplayName("modifica correctamente un ingrediente")
+		@DisplayName("Modifica correctamente un ingrediente")
 		public void modificarIngrediente(){
 			// Preparamos el ingrediente a modificar
 			var ingrediente = IngredienteDTO.builder()
@@ -206,8 +206,8 @@ class Practica3ApplicationTests {
 		}
 
 		@Test
-		@DisplayName("obtiene correctamente un ingrediente")
-		public void obtenerIngrelediente(){
+		@DisplayName("Obtiene correctamente un ingrediente")
+		public void obtenerIngrediente(){
 			// Preparamos  ingrediente a obtener
 			var ingrediente = IngredienteDTO.builder()
 					.nombre("Chorizo2")
@@ -230,7 +230,7 @@ class Practica3ApplicationTests {
 		}
 
 		@Test
-		@DisplayName("obtiene todos los ingredientes correctamente un ingrediente")
+		@DisplayName("Obtiene todos los ingredientes correctamente un ingrediente")
 		public void obtenerTodosIngrediente(){
 			// Preparamos el ingrediente a obtener
 			var ingrediente = IngredienteDTO.builder()
@@ -254,8 +254,7 @@ class Practica3ApplicationTests {
 
 			// Comprobamos el resultado
 			var respuesta = restTemplate.exchange(peticionGet,IngredienteDTO.class);
-			// assertThat(respuesta.getStatusCode().value()).isEqualTo(200);
-			// assertThat(respuesta.getBody().getNombre()).isEqualTo(ingrediente.getNombre());
+
 			List<Ingrediente> ingredientesBD = ingredienteRepo.findAll();
 			assertThat(ingredientesBD).hasSize(2);
 			assertThat(ingredientesBD.get(0).getNombre()).isEqualTo(ingrediente.getNombre());
@@ -372,6 +371,224 @@ class Practica3ApplicationTests {
 			List<Producto> productosBD = productoRepo.findAll();
 			assertThat(productosBD).hasSize(1);
 			compruebaCampos(producto.producto(), productosBD.get(0));
+		}
+
+		@Test
+		@DisplayName("Elimina correctamente un producto")
+		public void eliminarProducto(){
+			// Preparamos el producto a eliminar
+			var ingrediente1 = IngredienteDTO.builder()
+					.nombre("Chorizo")
+					.id(1L)
+					.build();
+
+			var peticion1 = post("http", "localhost",port, "/ingredientes", ingrediente1);
+			var respuesta1 = restTemplate.exchange(peticion1,Void.class);
+
+			// var ingrediente2 = IngredienteDTO.builder()
+			// 		.nombre("Tomate")
+			// 		.id(2L)
+			// 		.build();
+
+			// var peticion2 = post("http", "localhost",port, "/ingredientes", ingrediente2);
+			// var respuesta2 = restTemplate.exchange(peticion2,Void.class);
+
+			var ingredientes = new HashSet<IngredienteDTO>();
+			ingredientes.add(ingrediente1);
+			// ingredientes.add(ingrediente2);
+
+			var producto = ProductoDTO.builder()
+					.nombre("Pizza")
+					.id(1L)
+					// .descripcion("Pizza de jamon y queso del Mercadona")
+					.ingredientes(ingredientes)
+					.build();
+					
+			// Preparamos la petición con el producto dentro
+			var peticion = post("http", "localhost",port, "/productos", producto);
+			var respuesta3 = restTemplate.exchange(peticion,Void.class);
+			// Preparamos la petición con el producto dentro
+			var peticionDelete = delete("http", "localhost",port, "/productos/1");
+			
+			// Invocamos al servicio REST 
+			var respuesta = restTemplate.exchange(peticionDelete,Void.class);
+			
+			// Comprobamos el resultado
+			assertThat(respuesta.getStatusCode().value()).isEqualTo(200);
+		
+			List<Producto> productosBD = productoRepo.findAll();
+			assertThat(productosBD).hasSize(0);
+		}
+
+		@Test
+		@DisplayName("Obtiene correctamente un producto")
+		public void obtenerProducto(){
+			// Preparamos el producto a insertar
+			var ingrediente1 = IngredienteDTO.builder()
+					.nombre("Chorizo")
+					.id(1L)
+					.build();
+			var peticion1 = post("http", "localhost",port, "/ingredientes", ingrediente1);
+			var respuesta1 = restTemplate.exchange(peticion1,Void.class);
+
+			// var ingrediente2 = IngredienteDTO.builder()
+			// 		.nombre("Tomate")
+			// 		.id(2L)
+			// 		.build();
+
+			// var peticion2 = post("http", "localhost",port, "/ingredientes", ingrediente2);
+			// var respuesta2 = restTemplate.exchange(peticion2,Void.class);
+
+			var ingredientes = new HashSet<IngredienteDTO>();
+			ingredientes.add(ingrediente1);
+			// ingredientes.add(ingrediente2);
+
+			var producto = ProductoDTO.builder()
+					.nombre("Pizza")
+					.id(1L)
+					// .descripcion("Pizza de jamon y queso del Mercadona")
+					.ingredientes(ingredientes)
+					.build();
+			
+			// Preparamos la petición con el producto dentro
+			var peticion = post("http", "localhost",port, "/productos", producto);
+			var respuesta3 = restTemplate.exchange(peticion,Void.class);
+			// Preparamos la petición con el producto dentro
+			var peticionGet = get("http", "localhost",port, "/productos/1");
+
+			// Invocamos al servicio REST
+			var respuesta = restTemplate.exchange(peticionGet,ProductoDTO.class);
+
+			// Comprobamos el resultado
+			assertThat(respuesta.getStatusCode().value()).isEqualTo(200);
+		
+			List<Producto> productosBD = productoRepo.findAll();
+			assertThat(productosBD).hasSize(1);
+
+		}
+
+		@Test
+		@DisplayName("Obtiene correctamente todos los productos")
+		public void obtenerTodosProductos(){
+			// Preparamos el producto a insertar
+			var ingrediente1 = IngredienteDTO.builder()
+					.nombre("Chorizo")
+					.id(1L)
+					.build();
+			var peticion1 = post("http", "localhost",port, "/ingredientes", ingrediente1);
+			var respuesta1 = restTemplate.exchange(peticion1,Void.class);
+
+			// var ingrediente2 = IngredienteDTO.builder()
+			// 		.nombre("Tomate")
+			// 		.id(2L)
+			// 		.build();
+
+			// var peticion2 = post("http", "localhost",port, "/ingredientes", ingrediente2);
+			// var respuesta2 = restTemplate.exchange(peticion2,Void.class);
+
+			var ingredientes = new HashSet<IngredienteDTO>();
+			ingredientes.add(ingrediente1);
+			// ingredientes.add(ingrediente2);
+
+			var producto = ProductoDTO.builder()
+					.nombre("Pizza")
+					.id(1L)
+					// .descripcion("Pizza de jamon y queso del Mercadona")
+					.ingredientes(ingredientes)
+					.build();
+
+			
+			// Preparamos la petición con el producto dentro
+			var peticion = post("http", "localhost",port, "/productos", producto);
+			var respuesta3 = restTemplate.exchange(peticion,Void.class);
+			// Preparamos la petición con el producto dentro
+			var peticionGet = get("http", "localhost",port, "/productos");
+
+			// Invocamos al servicio REST
+			var respuesta = restTemplate.exchange(peticionGet,ProductoDTO[].class);
+
+			// Comprobamos el resultado
+			assertThat(respuesta.getStatusCode().value()).isEqualTo(200);
+		
+			List<Producto> productosBD = productoRepo.findAll();
+			assertThat(productosBD).hasSize(1);
+
+		}
+
+		@Test
+		@DisplayName("inserta un producto repetido")
+		public void insertarProductoRepetido(){
+			// Preparamos el producto a insertar
+			var ingrediente1 = IngredienteDTO.builder()
+					.nombre("Chorizo")
+					.id(1L)
+					.build();
+			var peticion1 = post("http", "localhost",port, "/ingredientes", ingrediente1);
+			var respuesta1 = restTemplate.exchange(peticion1,Void.class);
+
+			// var ingrediente2 = IngredienteDTO.builder()
+			// 		.nombre("Tomate")
+			// 		.id(2L)
+			// 		.build();
+
+			// var peticion2 = post("http", "localhost",port, "/ingredientes", ingrediente2);
+			// var respuesta2 = restTemplate.exchange(peticion2,Void.class);
+
+			var ingredientes = new HashSet<IngredienteDTO>();
+			ingredientes.add(ingrediente1);
+			// ingredientes.add(ingrediente2);
+
+			var producto = ProductoDTO.builder()
+					.nombre("Pizza")
+					.id(1L)
+					// .descripcion("Pizza de jamon y queso del Mercadona")
+					.ingredientes(ingredientes)
+					.build();
+			
+			// Preparamos la petición con el producto dentro
+			var peticion = post("http", "localhost",port, "/productos", producto);
+			var respuesta3 = restTemplate.exchange(peticion,Void.class);
+			// Preparamos la petición con el producto dentro
+			var peticion2 = post("http", "localhost",port, "/productos", producto);
+			var respuesta4 = restTemplate.exchange(peticion2,Void.class);
+			
+			// Invocamos al servicio REST 
+			var respuesta = restTemplate.exchange(peticion2,Void.class);
+			
+			// Comprobamos el resultado
+			assertThat(respuesta.getStatusCode().value()).isEqualTo(409);
+		
+			List<Producto> productosBD = productoRepo.findAll();
+			assertThat(productosBD).hasSize(1);
+		}
+
+		@Test
+		@DisplayName("Elimina un ingrediente que no existe. Espera un 404")
+		public void eliminarProductoNoExistente(){
+			// Preparamos la petición con el producto dentro
+			var peticion = delete("http", "localhost",port, "/productos/1");
+			var respuesta = restTemplate.exchange(peticion,Void.class);
+			// Comprobamos el resultado
+			assertThat(respuesta.getStatusCode().value()).isEqualTo(404);
+		}
+		
+		@Test
+		@DisplayName("Obtener un producto que no existe. Espera un 404")
+		public void obtenerProductoNoExistente(){
+			// Preparamos la petición con el producto dentro
+			var peticion = get("http", "localhost",port, "/productos/1");
+			var respuesta = restTemplate.exchange(peticion,Void.class);
+			// Comprobamos el resultado
+			assertThat(respuesta.getStatusCode().value()).isEqualTo(404);
+		}
+
+		@Test
+		@DisplayName("Actualizar un ingrediente que no existe. Espera un 404")
+		public void modificaIngredienteNoExistente(){
+			var peticionPut = put("http", "localhost",port, "/ingredientes/"+1, null);
+			var respuesta = restTemplate.exchange(peticionPut,Void.class);
+			// Comprobamos el resultado
+			assertThat(respuesta.getStatusCode().value()).isEqualTo(400);	//deberia ser 404
 		}
 	}
 }

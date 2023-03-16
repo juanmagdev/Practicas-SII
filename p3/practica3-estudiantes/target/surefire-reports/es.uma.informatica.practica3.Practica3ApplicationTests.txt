@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: es.uma.informatica.practica3.Practica3ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.826 s - in es.uma.informatica.practica3.Practica3ApplicationTests
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.535 s - in es.uma.informatica.practica3.Practica3ApplicationTests

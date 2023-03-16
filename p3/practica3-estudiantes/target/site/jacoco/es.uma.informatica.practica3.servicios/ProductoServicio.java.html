@@ -71,11 +71,11 @@ public class ProductoServicio {
 	}
 	
 	public Producto obtenerProducto(Long id) {
-<span class="nc" id="L74">		var producto = productoRepo.findById(id);</span>
-<span class="nc bnc" id="L75" title="All 2 branches missed.">		if (producto.isPresent()) {</span>
-<span class="nc" id="L76">			return producto.get();</span>
+<span class="fc" id="L74">		var producto = productoRepo.findById(id);</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">		if (producto.isPresent()) {</span>
+<span class="fc" id="L76">			return producto.get();</span>
 		} else {
-<span class="nc" id="L78">			throw new EntidadNoEncontradaException();</span>
+<span class="fc" id="L78">			throw new EntidadNoEncontradaException();</span>
 		}	
 	}
 	
@@ -90,8 +90,8 @@ public class ProductoServicio {
 	}
 	
 	public Long aniadirProducto(Producto producto) {
-<span class="pc bpc" id="L93" title="1 of 2 branches missed.">		if (productoRepo.existsByNombre(producto.getNombre())) {</span>
-<span class="nc" id="L94">			throw new EntidadExistenteException();</span>
+<span class="fc bfc" id="L93" title="All 2 branches covered.">		if (productoRepo.existsByNombre(producto.getNombre())) {</span>
+<span class="fc" id="L94">			throw new EntidadExistenteException();</span>
 		}
 <span class="fc" id="L96">		refrescarIngredientes(producto);</span>
 <span class="fc" id="L97">		productoRepo.save(producto);</span>
@@ -101,25 +101,25 @@ public class ProductoServicio {
 	private void refrescarIngredientes(Producto producto) {
 <span class="fc" id="L102">		var ingredientesEnContexto = producto.getIngredientes().stream()</span>
 <span class="fc" id="L103">			.map(ing -&gt; refrescaIngrediente(ing)</span>
-<span class="fc" id="L104">							.orElseThrow(() -&gt; new EntidadNoEncontradaException()))</span>
+<span class="pc" id="L104">							.orElseThrow(() -&gt; new EntidadNoEncontradaException()))</span>
 <span class="fc" id="L105">			.collect(Collectors.toSet());</span>
 <span class="fc" id="L106">		producto.setIngredientes(ingredientesEnContexto);</span>
 <span class="fc" id="L107">	}</span>
 	
 	public void eliminarProducto(Long id) {
-<span class="nc bnc" id="L110" title="All 2 branches missed.">		if (productoRepo.existsById(id)) {</span>
-<span class="nc" id="L111">			productoRepo.deleteById(id);</span>
+<span class="fc bfc" id="L110" title="All 2 branches covered.">		if (productoRepo.existsById(id)) {</span>
+<span class="fc" id="L111">			productoRepo.deleteById(id);</span>
 		} else {
-<span class="nc" id="L113">			throw new EntidadNoEncontradaException();</span>
+<span class="fc" id="L113">			throw new EntidadNoEncontradaException();</span>
 		}
-<span class="nc" id="L115">	}</span>
+<span class="fc" id="L115">	}</span>
 	
 	public void actualizarProducto(Producto producto) {
-<span class="fc bfc" id="L118" title="All 2 branches covered.">		if (productoRepo.existsById(producto.getId())) {</span>
+<span class="pc bpc" id="L118" title="1 of 2 branches missed.">		if (productoRepo.existsById(producto.getId())) {</span>
 <span class="fc" id="L119">			refrescarIngredientes(producto);</span>
 <span class="fc" id="L120">			productoRepo.save(producto);</span>
 		} else {
-<span class="fc" id="L122">			throw new EntidadNoEncontradaException();</span>
+<span class="nc" id="L122">			throw new EntidadNoEncontradaException();</span>
 		}
 <span class="fc" id="L124">	}</span>
 	
