@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProductoDTO.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">practica3</a> &gt; <a href="index.source.html" class="el_package">es.uma.informatica.practica3.dtos</a> &gt; <span class="el_source">ProductoDTO.java</span></div><h1>ProductoDTO.java</h1><pre class="source lang-java linenums">package es.uma.informatica.practica3.dtos;
+
+import java.net.URI;
+import java.util.Collections;
+import java.util.Optional;
+import java.util.Set;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import es.uma.informatica.practica3.entidades.Producto;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+<span class="fc" id="L20">@Setter</span>
+<span class="fc" id="L21">@NoArgsConstructor</span>
+<span class="fc" id="L22">@AllArgsConstructor</span>
+<span class="pc" id="L23">@Builder</span>
+public class ProductoDTO {
+	
+<span class="fc" id="L26">	private Long id;</span>
+<span class="fc" id="L27">	private String nombre;</span>
+<span class="fc" id="L28">	private String descripcion;</span>
+<span class="fc" id="L29">	private Set&lt;IngredienteDTO&gt; ingredientes;</span>
+	@JsonProperty(&quot;_links&quot;)
+<span class="fc" id="L31">	private Links links;</span>
+	
+	public static ProductoDTO fromProducto(Producto producto, 
+			Function&lt;Long, URI&gt; productoUriBuilder, 
+			Function&lt;Long, URI&gt; ingredienteUriBuilder) {
+<span class="nc" id="L36">		var dto = new ProductoDTO();</span>
+<span class="nc" id="L37">		dto.setNombre(producto.getNombre());</span>
+<span class="nc" id="L38">		dto.setDescripcion(producto.getDescripcion());</span>
+<span class="nc" id="L39">		dto.setId(producto.getId());</span>
+<span class="nc" id="L40">		dto.setLinks(Links.builder()</span>
+<span class="nc" id="L41">				.self(productoUriBuilder.apply(producto.getId()))</span>
+<span class="nc" id="L42">				.build());</span>
+		
+<span class="nc" id="L44">		dto.setIngredientes(</span>
+<span class="nc" id="L45">				producto.getIngredientes().stream()</span>
+<span class="nc" id="L46">					.map(i-&gt;IngredienteDTO.fromIngrediente(i, ingredienteUriBuilder))</span>
+<span class="nc" id="L47">					.collect(Collectors.toSet()));</span>
+<span class="nc" id="L48">		return dto;</span>
+	}
+	
+	public Producto producto() {
+<span class="fc" id="L52">		var prod = new Producto();</span>
+<span class="fc" id="L53">		prod.setNombre(nombre);</span>
+<span class="fc" id="L54">		prod.setId(id);</span>
+<span class="fc" id="L55">		prod.setDescripcion(descripcion);</span>
+<span class="fc" id="L56">		prod.setIngredientes(</span>
+<span class="fc" id="L57">				Optional.ofNullable(ingredientes)</span>
+<span class="fc" id="L58">				.orElse((Set&lt;IngredienteDTO&gt;)Collections.EMPTY_SET)</span>
+<span class="fc" id="L59">				.stream()</span>
+<span class="fc" id="L60">					.map(IngredienteDTO::ingrediente)</span>
+<span class="fc" id="L61">					.collect(Collectors.toSet())</span>
+					);
+<span class="fc" id="L63">		return prod;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

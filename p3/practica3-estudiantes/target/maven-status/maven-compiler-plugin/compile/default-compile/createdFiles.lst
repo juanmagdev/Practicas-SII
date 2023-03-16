@@ -1,0 +1,16 @@
+es/uma/informatica/practica3/servicios/ProductoServicio.class
+es/uma/informatica/practica3/dtos/ProductoDTO$ProductoDTOBuilder.class
+es/uma/informatica/practica3/repositorios/IngredienteRepository.class
+es/uma/informatica/practica3/controladores/IngredienteRest.class
+es/uma/informatica/practica3/entidades/Ingrediente.class
+es/uma/informatica/practica3/controladores/ProductoRest.class
+es/uma/informatica/practica3/servicios/excepciones/EntidadExistenteException.class
+es/uma/informatica/practica3/dtos/Links$LinksBuilder.class
+es/uma/informatica/practica3/dtos/ProductoDTO.class
+es/uma/informatica/practica3/dtos/Links.class
+es/uma/informatica/practica3/servicios/excepciones/EntidadNoEncontradaException.class
+es/uma/informatica/practica3/entidades/Producto.class
+es/uma/informatica/practica3/dtos/IngredienteDTO$IngredienteDTOBuilder.class
+es/uma/informatica/practica3/dtos/IngredienteDTO.class
+es/uma/informatica/practica3/Practica3Application.class
+es/uma/informatica/practica3/repositorios/ProductoRepository.class

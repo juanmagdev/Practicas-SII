@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Producto.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">practica3</a> &gt; <a href="index.source.html" class="el_package">es.uma.informatica.practica3.entidades</a> &gt; <span class="el_source">Producto.java</span></div><h1>Producto.java</h1><pre class="source lang-java linenums">package es.uma.informatica.practica3.entidades;
+
+import java.util.Objects;
+import java.util.Set;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Getter
+<span class="fc" id="L18">@Setter</span>
+<span class="fc" id="L19">@NoArgsConstructor</span>
+public class Producto {
+	
+	@Id @GeneratedValue
+<span class="fc" id="L23">	private Long id;</span>
+	@Column(unique = true)
+<span class="fc" id="L25">	private String nombre;</span>
+<span class="fc" id="L26">	private String descripcion;</span>
+	@ManyToMany(fetch = FetchType.EAGER)
+<span class="fc" id="L28">	private Set&lt;Ingrediente&gt; ingredientes;</span>
+	
+	@Override
+	public int hashCode() {
+<span class="nc" id="L32">		return Objects.hash(id);</span>
+	}
+	@Override
+	public boolean equals(Object obj) {
+<span class="nc bnc" id="L36" title="All 2 branches missed.">		if (this == obj)</span>
+<span class="nc" id="L37">			return true;</span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">		if (obj == null)</span>
+<span class="nc" id="L39">			return false;</span>
+<span class="nc bnc" id="L40" title="All 2 branches missed.">		if (getClass() != obj.getClass())</span>
+<span class="nc" id="L41">			return false;</span>
+<span class="nc" id="L42">		Producto other = (Producto) obj;</span>
+<span class="nc" id="L43">		return Objects.equals(id, other.id);</span>
+	}
+	
+	
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

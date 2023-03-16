@@ -1,0 +1,15 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+practica3,es.uma.informatica.practica3.entidades,Producto,34,31,6,0,9,6,5,9,2,9
+practica3,es.uma.informatica.practica3.entidades,Ingrediente,6,45,3,3,3,10,3,7,0,7
+practica3,es.uma.informatica.practica3.dtos,ProductoDTO,43,92,0,0,12,20,2,14,2,14
+practica3,es.uma.informatica.practica3.dtos,Links.LinksBuilder,5,14,0,0,0,1,1,3,1,3
+practica3,es.uma.informatica.practica3.dtos,IngredienteDTO,0,78,0,0,0,19,0,11,0,11
+practica3,es.uma.informatica.practica3.dtos,IngredienteDTO.IngredienteDTOBuilder,14,23,0,0,0,1,2,4,2,4
+practica3,es.uma.informatica.practica3.dtos,ProductoDTO.ProductoDTOBuilder,19,37,0,0,0,1,2,6,2,6
+practica3,es.uma.informatica.practica3.dtos,Links,0,20,0,0,0,5,0,5,0,5
+practica3,es.uma.informatica.practica3.servicios.excepciones,EntidadExistenteException,0,3,0,0,0,1,0,1,0,1
+practica3,es.uma.informatica.practica3.servicios.excepciones,EntidadNoEncontradaException,0,3,0,0,0,1,0,1,0,1
+practica3,es.uma.informatica.practica3,Practica3Application,5,3,0,0,2,1,1,1,1,1
+practica3,es.uma.informatica.practica3.servicios,ProductoServicio,58,145,10,10,15,37,10,15,3,12
+practica3,es.uma.informatica.practica3.controladores,ProductoRest,29,68,0,0,10,22,4,7,4,7
+practica3,es.uma.informatica.practica3.controladores,IngredienteRest,17,72,0,0,5,21,2,9,2,9

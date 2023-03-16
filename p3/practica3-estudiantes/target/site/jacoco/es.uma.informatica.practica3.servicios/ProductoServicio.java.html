@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProductoServicio.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">practica3</a> &gt; <a href="index.source.html" class="el_package">es.uma.informatica.practica3.servicios</a> &gt; <span class="el_source">ProductoServicio.java</span></div><h1>ProductoServicio.java</h1><pre class="source lang-java linenums">package es.uma.informatica.practica3.servicios;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import es.uma.informatica.practica3.entidades.Ingrediente;
+import es.uma.informatica.practica3.entidades.Producto;
+import es.uma.informatica.practica3.repositorios.IngredienteRepository;
+import es.uma.informatica.practica3.repositorios.ProductoRepository;
+import es.uma.informatica.practica3.servicios.excepciones.EntidadExistenteException;
+import es.uma.informatica.practica3.servicios.excepciones.EntidadNoEncontradaException;
+
+@Service
+@Transactional
+public class ProductoServicio {
+	
+	private ProductoRepository productoRepo;
+	private IngredienteRepository ingredienteRepo;
+	
+	public ProductoServicio(ProductoRepository productoRepo, 
+<span class="fc" id="L25">			IngredienteRepository ingredienteRepo) {</span>
+<span class="fc" id="L26">		this.productoRepo = productoRepo;</span>
+<span class="fc" id="L27">		this.ingredienteRepo = ingredienteRepo;</span>
+<span class="fc" id="L28">	}</span>
+	
+	public List&lt;Ingrediente&gt; obtenerIngredientes() {
+<span class="nc" id="L31">		return ingredienteRepo.findAll();</span>
+	}
+	
+	public Ingrediente obtenerIngrediente(Long id) {
+<span class="fc" id="L35">		var ingrediente = ingredienteRepo.findById(id);</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">		if (ingrediente.isPresent()) {</span>
+<span class="fc" id="L37">			return ingrediente.get();</span>
+		} else {
+<span class="fc" id="L39">			throw new EntidadNoEncontradaException();</span>
+		}	
+	}
+	
+	public Long aniadirIngrediente(Ingrediente ing) {
+<span class="fc bfc" id="L44" title="All 2 branches covered.">		if (!ingredienteRepo.existsByNombre(ing.getNombre())) {</span>
+<span class="fc" id="L45">			ing.setId(null);</span>
+<span class="fc" id="L46">			ingredienteRepo.save(ing);</span>
+<span class="fc" id="L47">			return ing.getId();</span>
+		} else {
+<span class="fc" id="L49">			throw new EntidadExistenteException();</span>
+		}
+	}
+	
+	public void eliminarIngrediente(Long id) {
+<span class="pc bpc" id="L54" title="1 of 2 branches missed.">		if (ingredienteRepo.existsById(id)) {</span>
+<span class="fc" id="L55">			ingredienteRepo.deleteById(id);</span>
+		} else {
+<span class="nc" id="L57">			throw new EntidadNoEncontradaException();</span>
+		}
+<span class="fc" id="L59">	}</span>
+	
+	public void actualizarIngrediente(Ingrediente ingrediente) {
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">		if (ingredienteRepo.existsById(ingrediente.getId())) {</span>
+<span class="fc" id="L63">			ingredienteRepo.save(ingrediente);</span>
+		} else {
+<span class="nc" id="L65">			throw new EntidadNoEncontradaException();</span>
+		}
+<span class="fc" id="L67">	}</span>
+	
+	public List&lt;Producto&gt; obtenerProductos() {
+<span class="fc" id="L70">		return productoRepo.findAll();</span>
+	}
+	
+	public Producto obtenerProducto(Long id) {
+<span class="nc" id="L74">		var producto = productoRepo.findById(id);</span>
+<span class="nc bnc" id="L75" title="All 2 branches missed.">		if (producto.isPresent()) {</span>
+<span class="nc" id="L76">			return producto.get();</span>
+		} else {
+<span class="nc" id="L78">			throw new EntidadNoEncontradaException();</span>
+		}	
+	}
+	
+	private Optional&lt;Ingrediente&gt; refrescaIngrediente(Ingrediente ingrediente) {
+<span class="pc bpc" id="L83" title="1 of 2 branches missed.">		if (ingrediente.getId()!=null) {</span>
+<span class="fc" id="L84">			return ingredienteRepo.findById(ingrediente.getId());</span>
+<span class="nc bnc" id="L85" title="All 2 branches missed.">		} else if (ingrediente.getNombre()!=null) {</span>
+<span class="nc" id="L86">			return ingredienteRepo.findFirstByNombre(ingrediente.getNombre());</span>
+		} else {
+<span class="nc" id="L88">			return Optional.empty();</span>
+		}
+	}
+	
+	public Long aniadirProducto(Producto producto) {
+<span class="pc bpc" id="L93" title="1 of 2 branches missed.">		if (productoRepo.existsByNombre(producto.getNombre())) {</span>
+<span class="nc" id="L94">			throw new EntidadExistenteException();</span>
+		}
+<span class="fc" id="L96">		refrescarIngredientes(producto);</span>
+<span class="fc" id="L97">		productoRepo.save(producto);</span>
+<span class="fc" id="L98">		return producto.getId();</span>
+	}
+
+	private void refrescarIngredientes(Producto producto) {
+<span class="fc" id="L102">		var ingredientesEnContexto = producto.getIngredientes().stream()</span>
+<span class="fc" id="L103">			.map(ing -&gt; refrescaIngrediente(ing)</span>
+<span class="fc" id="L104">							.orElseThrow(() -&gt; new EntidadNoEncontradaException()))</span>
+<span class="fc" id="L105">			.collect(Collectors.toSet());</span>
+<span class="fc" id="L106">		producto.setIngredientes(ingredientesEnContexto);</span>
+<span class="fc" id="L107">	}</span>
+	
+	public void eliminarProducto(Long id) {
+<span class="nc bnc" id="L110" title="All 2 branches missed.">		if (productoRepo.existsById(id)) {</span>
+<span class="nc" id="L111">			productoRepo.deleteById(id);</span>
+		} else {
+<span class="nc" id="L113">			throw new EntidadNoEncontradaException();</span>
+		}
+<span class="nc" id="L115">	}</span>
+	
+	public void actualizarProducto(Producto producto) {
+<span class="fc bfc" id="L118" title="All 2 branches covered.">		if (productoRepo.existsById(producto.getId())) {</span>
+<span class="fc" id="L119">			refrescarIngredientes(producto);</span>
+<span class="fc" id="L120">			productoRepo.save(producto);</span>
+		} else {
+<span class="fc" id="L122">			throw new EntidadNoEncontradaException();</span>
+		}
+<span class="fc" id="L124">	}</span>
+	
+	
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

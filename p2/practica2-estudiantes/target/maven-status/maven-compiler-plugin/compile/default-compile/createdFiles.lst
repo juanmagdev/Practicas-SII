@@ -1,0 +1,6 @@
+es/uma/informatica/sii/practica2/Practica2Application.class
+es/uma/informatica/sii/practica2/entidades/Contacto.class
+es/uma/informatica/sii/practica2/controladores/ControladorRest.class
+es/uma/informatica/sii/practica2/servicios/LogicaContactos.class
+es/uma/informatica/sii/practica2/repositorios/ContactoRepo.class
+es/uma/informatica/sii/practica2/servicios/excepciones/ContactoNoEncontrado.class

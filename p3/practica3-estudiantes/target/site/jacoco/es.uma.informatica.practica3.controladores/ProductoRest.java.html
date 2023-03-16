@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProductoRest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">practica3</a> &gt; <a href="index.source.html" class="el_package">es.uma.informatica.practica3.controladores</a> &gt; <span class="el_source">ProductoRest.java</span></div><h1>ProductoRest.java</h1><pre class="source lang-java linenums">package es.uma.informatica.practica3.controladores;
+
+import java.net.URI;
+import java.util.List;
+import java.util.function.Function;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.UriComponents;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import es.uma.informatica.practica3.dtos.ProductoDTO;
+import es.uma.informatica.practica3.entidades.Producto;
+import es.uma.informatica.practica3.servicios.ProductoServicio;
+import es.uma.informatica.practica3.servicios.excepciones.EntidadExistenteException;
+import es.uma.informatica.practica3.servicios.excepciones.EntidadNoEncontradaException;
+
+@RestController
+@RequestMapping(&quot;/productos&quot;)
+public class ProductoRest {
+
+	private ProductoServicio servicio;
+	
+<span class="fc" id="L34">	public ProductoRest(ProductoServicio servicio) {</span>
+<span class="fc" id="L35">		this.servicio = servicio;</span>
+<span class="fc" id="L36">	}</span>
+	
+	@GetMapping
+	public List&lt;ProductoDTO&gt; obtenerTodosLosProductos(UriComponentsBuilder uriBuilder) {
+<span class="fc" id="L40">		var productos = servicio.obtenerProductos();</span>
+<span class="fc" id="L41">		Function&lt;Producto, ProductoDTO&gt; mapper = (p -&gt; </span>
+<span class="nc" id="L42">			ProductoDTO.fromProducto(p, </span>
+<span class="nc" id="L43">					productoUriBuilder(uriBuilder.build()), </span>
+<span class="nc" id="L44">					IngredienteRest.ingredienteUriBuilder(uriBuilder.build())));</span>
+<span class="fc" id="L45">		return productos.stream()</span>
+<span class="fc" id="L46">			.map(mapper)</span>
+<span class="fc" id="L47">			.toList();</span>
+	}
+	
+	public static Function&lt;Long, URI&gt; productoUriBuilder(UriComponents uriBuilder) {
+		;
+<span class="fc" id="L52">		return id -&gt; UriComponentsBuilder.newInstance().uriComponents(uriBuilder).path(&quot;/productos&quot;)</span>
+<span class="fc" id="L53">				.path(String.format(&quot;/%d&quot;, id))</span>
+<span class="fc" id="L54">				.build()</span>
+<span class="fc" id="L55">				.toUri();</span>
+	}
+	
+	@PostMapping
+	public ResponseEntity&lt;?&gt; aniadirProducto(@RequestBody ProductoDTO producto, UriComponentsBuilder uriBuilder) {
+<span class="fc" id="L60">		Producto prod = producto.producto();</span>
+<span class="fc" id="L61">		Long id = servicio.aniadirProducto(prod);</span>
+<span class="fc" id="L62">		return ResponseEntity.created(</span>
+<span class="fc" id="L63">				productoUriBuilder(uriBuilder.build()).apply(id))</span>
+<span class="fc" id="L64">				.build();</span>
+	}
+	
+	@GetMapping(&quot;{id}&quot;)
+	@ResponseStatus(code=HttpStatus.OK)
+	public ProductoDTO obtenerProducto(@PathVariable Long id, UriComponentsBuilder uriBuilder) {
+<span class="nc" id="L70">		Producto producto = servicio.obtenerProducto(id);</span>
+<span class="nc" id="L71">		return ProductoDTO.fromProducto(producto, </span>
+<span class="nc" id="L72">				productoUriBuilder(uriBuilder.build()), </span>
+<span class="nc" id="L73">				IngredienteRest.ingredienteUriBuilder(uriBuilder.build()));</span>
+	}
+	
+	@PutMapping(&quot;{id}&quot;)
+	public void actualizarProducto(@PathVariable Long id, @RequestBody ProductoDTO producto) {
+<span class="fc" id="L78">		Producto entidadProducto = producto.producto();</span>
+<span class="fc" id="L79">		entidadProducto.setId(id);</span>
+<span class="fc" id="L80">		servicio.actualizarProducto(entidadProducto);</span>
+<span class="fc" id="L81">	}</span>
+	
+	@DeleteMapping(&quot;{id}&quot;)
+	public void eliminarProducto(@PathVariable Long id) {
+<span class="nc" id="L85">		servicio.eliminarProducto(id);</span>
+<span class="nc" id="L86">	}</span>
+	
+	@ExceptionHandler(EntidadNoEncontradaException.class)
+	@ResponseStatus(code = HttpStatus.NOT_FOUND)
+<span class="fc" id="L90">	public void noEncontrado() {}</span>
+	
+	@ExceptionHandler(EntidadExistenteException.class)
+	@ResponseStatus(code = HttpStatus.CONFLICT)
+<span class="nc" id="L94">	public void existente() {}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
