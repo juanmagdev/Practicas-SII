@@ -1,0 +1,23 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{accion}} contacto</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cierre usuario')"></button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input class="form-control" id="nombre" [(ngModel)]="contacto.nombre" placeholder="nombre">
+      <label for="apellidos">Apellidos:</label>
+      <input class="form-control" id="apellidos" [(ngModel)]="contacto.apellidos" placeholder="apellidos">
+      <label for="email">E-mail:</label>
+      <input class="form-control" id="email" [(ngModel)]="contacto.email" placeholder="fulanito@mengano.com">
+      <label for="telefono">Apellidos:</label>
+      <input class="form-control" id="telefono" [(ngModel)]="contacto.telefono" placeholder="(34) 123456789">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="favorito" [(ngModel)]="contacto.favorito">
+    <label class="form-check-label" for="favorito">Favorito</label>
+</div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="guardarContacto()">Guardar</button>
+</div>

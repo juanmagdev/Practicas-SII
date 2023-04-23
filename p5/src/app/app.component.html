@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Lista de contactos</h1>
+      <div class="list-group">
+        <button *ngFor="let contacto of contactos"
+          class="list-group-item-action list-group-item"
+          (click)="elegirContacto(contacto)"
+          [class.active]="contacto === contactoElegido">{{contacto.nombre}}
+        
+          <i *ngIf="contacto.favorito" class="bi bi-star-fill"></i>
+          <!-- <i *ngIf="!contacto.favorito" class="bi bi-star"></i> -->
+        
+        
+        </button>
+        
+          
+      </div>
+      <br>
+      <button type="button" class="btn btn-outline-primary bi bi-plus-lg" (click)="aniadirContacto()"></button>
+    </div>
+    <div class="col-md-6" *ngIf="contactoElegido">
+      <app-detalle-contacto [contacto]="contactoElegido"
+        (contactoEditado)="contactoEditado($event)"
+        (contactoEliminado)="eliminarContacto($event)"
+        ></app-detalle-contacto>
+    </div>
+  </div>
+</div>  
+
+
