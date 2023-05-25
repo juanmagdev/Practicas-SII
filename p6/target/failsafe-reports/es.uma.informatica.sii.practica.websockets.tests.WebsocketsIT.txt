@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: es.uma.informatica.sii.practica.websockets.tests.WebsocketsIT
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.026 s - in es.uma.informatica.sii.practica.websockets.tests.WebsocketsIT

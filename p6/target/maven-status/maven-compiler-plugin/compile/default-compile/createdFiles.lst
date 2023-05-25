@@ -1,0 +1,5 @@
+es/uma/informatica/sii/practica/websockets/config/WebSocketConfiguration.class
+es/uma/informatica/sii/practica/websockets/dtos/Mensaje.class
+es/uma/informatica/sii/practica/websockets/controladores/ManejadorWebSocket.class
+es/uma/informatica/sii/practica/websockets/ChatApplication.class
+es/uma/informatica/sii/practica/websockets/dtos/Mensaje$TipoMensaje.class

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sala de chat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="chat.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+	<div id="inicio" class="container">
+		<div class="row">
+			<div id="ingreso" class="form-group col-auto container">
+				<h2 class="">Ingreso en la sala de chat</h2>
+				<label class="form-label" for="nombre">Nombre:</label> <input
+					class="mb-3 form-control" type="text" id="nombre" name="nombre"
+					placeholder="Nombre" />
+				<button class="btn btn-primary" id="botonEntrada" onClick="entrar()">Entrar</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="sala" style="display: none" class="container">
+		<div class="row">
+		<div class="col-auto container">
+			<h2>Sala de chat</h2>
+			<textarea readonly rows="20" cols="80" id="areaChat"></textarea>
+			<input class="form-control col-auto mb-3" type="text" maxlength="200" size="30" id="entradaTexto"
+				placeholder="introduzca su mensaje"
+				onkeypress="teclaEnEntrada(event)" />
+			<button class="btn btn-primary col-auto" id="botonEnviar" onClick="mandaMensaje()">Enviar<i class="bi bi-star-fill"></i></button>
+			<span class="col-1"></span>
+			<button class="btn btn-primary col-auto" id="botonSalir" onClick="salir()">Salir</button>
+		</div>
+		</div>
+	</div>
+</body>
+
+</html>
